@@ -1,0 +1,18 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+void klarge(int arr[],int n,int k)
+{
+sort(arr,arr+n,greater<int>());
+for(int i=0;i<k;i++)
+ cout<<arr[i];
+}
+
+int main()
+{
+int arr[]={1,20,3,50,4};
+int n=sizeof(arr)/sizeof(arr[0]);
+int k=3;
+klarge(arr,n,k);
+}
