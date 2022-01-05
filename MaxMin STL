@@ -1,0 +1,9 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+int arr[5]={1,2,3,40,5};
+int N=5;
+cout<<"max"<<(*max_element(arr,arr+N))<<endl;
+cout<<"min"<<(*min_element(arr,arr+N))<<endl;
+}
